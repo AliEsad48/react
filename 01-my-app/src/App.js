@@ -5,7 +5,7 @@ import Test from "./components/test/Test";
 function App() {
   return (
     <div>
-      <div>Merhaba Dünya</div>
+      Merhaba Dünya(App)
       <Hello />
       <Test />
     </div>
