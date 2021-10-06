@@ -2,7 +2,7 @@ import React from "react";
 import Hello from "./components/hello/Hello";
 import Test from "./components/test/Test";
 import Jsx from "./components/jsx/Jsx";
-import Style from "./style/style";
+import Style from "./style/Style";
 
 
 function App() {
