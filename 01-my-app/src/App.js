@@ -2,7 +2,8 @@ import React from "react";
 import Hello from "./components/hello/Hello";
 import Test from "./components/test/Test";
 import Jsx from "./components/jsx/Jsx";
-import Style from "./style/Style";
+import InlineStyle from "./style/InlineStyle";
+import InternalStyle from "./style/InternalStyle";
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       <Hello />
       <Test />
       <Jsx />
-      <Style />
+      <InlineStyle />
+      <InternalStyle />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-const Style = () => {
+const InlineStyle = () => {
     return <div style={{
         fontSize: "3rem",
         color: "red",
@@ -6,8 +6,8 @@ const Style = () => {
         border: "1px solid red",
         backgroundColor: "blue"
     }}>
-        Bugün hava serin
-    </div>;
+        Bugün <span style={{ color: "yellow" }}>hava</span> serin
+    </div>
 };
 
-export default Style;
+export default InlineStyle;
