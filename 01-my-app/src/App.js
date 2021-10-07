@@ -5,18 +5,20 @@ import Jsx from "./components/jsx/Jsx";
 import InlineStyle from "./style/InlineStyle";
 import InternalStyle from "./style/InternalStyle";
 import ExternalStyle from "./style/ExternalStyle";
+import Clock1 from "./components/clock1/Clock1";
 
 
 function App() {
   return (
     <div>
-      Merhaba Dünya(App)
+      {/* Merhaba Dünya(App)
       <Hello />
       <Test />
       <Jsx />
       <InlineStyle />
       <InternalStyle />
-      <ExternalStyle />
+      <ExternalStyle /> */}
+      <Clock1 />
     </div>
   );
 }
