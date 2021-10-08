@@ -1,23 +1,31 @@
-import React from 'react'
+import React from "react";
 
 const Banner = () => {
     return (
-        <section clasName="hero-02 full-screen py-6" id="hero">
-            <div clasName="hero-center">
-                <div clasName="container">
-                    <div clasName="row">
-                        <div clasName="col-lg-12">
-                            <div clasName="hero-content text-center">
-                                <div clasName="hero-img">
+        <section className="hero-02 full-screen py-6" id="hero">
+            <div className="hero-center">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <div className="hero-content text-center">
+                                <div className="hero-img">
                                     <img src="assets/img/man-avator.png" alt="" />
                                 </div>
-                                <h3 clasName="mb-0 mt-3">I'M John Doe</h3>
-                                <h1 clasName="text-capitalize mb-3"><span clasName="base-color">A  </span> <span clasName="element" data-elements="UI Designer.,Web Designer.,Web Developer."></span></h1>
-                                <a href="javascript:void(0);" clasName="pill-button-01">Download Cv</a>
+                                <h3 className="mb-0 mt-3">I'M John Doe</h3>
+                                <h1 className="text-capitalize mb-3">
+                                    <span className="base-color">A </span>{" "}
+                                    <span
+                                        className="element"
+                                        data-elements="UI Designer.,Web Designer.,Web Developer."
+                                    ></span>
+                                </h1>
+                                <a href="#" className="pill-button-01">
+                                    Download Cv
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div clasName="scroll-down">
+                    <div className="scroll-down">
                         <a href="#about">
                             <span></span>
                         </a>
@@ -25,7 +33,7 @@ const Banner = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Banner
+export default Banner;
