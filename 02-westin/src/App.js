@@ -6,6 +6,9 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Testimonal from "./components/Testimonal";
+import Blog from "./components/Blog";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <div>
@@ -16,6 +19,9 @@ const App = () => {
       <Services />
       <Portfolio />
       <Testimonal />
+      <Blog />
+      <Contact />
+      <Footer />
     </div>
   );
 };
