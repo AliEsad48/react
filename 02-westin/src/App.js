@@ -22,6 +22,7 @@ const App = () => {
       <Blog />
       <Contact />
       <Footer />
+
     </div>
   );
 };
