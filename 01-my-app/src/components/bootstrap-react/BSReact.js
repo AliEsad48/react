@@ -1,10 +1,10 @@
 import React from 'react';
-import {Navbar , Nav} from "react-bootstrap"
+import { Navbar, Nav, NavDropdown, Button,Form,FormControl , Container } from "react-bootstrap";
 
 
 const BSReact = () => {
     return (
-        <div>
+        
             <Navbar bg="light" expand="lg">
   <Container fluid>
     <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
@@ -41,7 +41,7 @@ const BSReact = () => {
     </Navbar.Collapse>
   </Container>
 </Navbar>
-        </div>
+       
     )
 }
 
