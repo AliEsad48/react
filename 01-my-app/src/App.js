@@ -10,6 +10,7 @@ import React from "react";
 // import Props from "./components/props/Props";
 // import Header from "./components/shop/Header";
 import Shop from "./components/shop/Shop";
+import State from "./components/state/State";
 // import ExternalStyle from "./components/style/ExternalStyle";
 // import InlineStyle from "./components/style/InlineStyle";
 // import InternalStyle from "./components/style/InternalStyle";
@@ -83,8 +84,10 @@ function App() {
        <BSClassic />
     
     <BSReact />
-    */}
+   
     <Shop />
+     */}
+     <State />
        </div>
   );
 }
