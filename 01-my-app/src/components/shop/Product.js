@@ -13,7 +13,7 @@ const Product = (props) => {
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{desc}</Card.Text>
-        <Card.Text>${price}</Card.Text>
+        <Card.Text>{price}</Card.Text>
         <Button variant="warning">Add Cart</Button>
       </Card.Body>
     </Card>
