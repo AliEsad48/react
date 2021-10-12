@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"
+import Counter from "./components/counter/Counter"
 // import BSClassic from "./components/bootstrap-classic/BSClassic";
 // import BSReact from "./components/bootstrap-react/BSReact";
 // import Clock1 from "./components/clock1/Clock1";
@@ -9,17 +10,16 @@ import React from "react";
 // import Profile from "./components/profile/Profile";
 // import Props from "./components/props/Props";
 // import Header from "./components/shop/Header";
-import Shop from "./components/shop/Shop";
-import State from "./components/state/State";
+import Shop from "./components/shop/Shop"
+import State from "./components/state/State"
 // import ExternalStyle from "./components/style/ExternalStyle";
 // import InlineStyle from "./components/style/InlineStyle";
 // import InternalStyle from "./components/style/InternalStyle";
-import Test from "./components/test/Test";
-
+import Test from "./components/test/Test"
 
 function App() {
   const avatarUrl =
-    "https://images.unsplash.com/photo-1633156583772-3c3ccee99b91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80";
+    "https://images.unsplash.com/photo-1633156583772-3c3ccee99b91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
 
   return (
     <div>
@@ -86,10 +86,13 @@ function App() {
     <BSReact />
    
     <Shop />
-     */}
+     
      <State />
-       </div>
-  );
+     */}
+
+      <Counter />
+    </div>
+  )
 }
 
-export default App;
+export default App
