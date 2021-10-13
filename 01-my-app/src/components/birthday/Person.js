@@ -1,8 +1,8 @@
-import React from "react";
-import { Card } from "react-bootstrap";
+import React from "react"
+import { Card } from "react-bootstrap"
 
 const Person = (props) => {
-  const { image, name, age } = props;
+  const { image, name, age } = props
   return (
     <Card>
       <Card.Body className="d-flex">
@@ -18,7 +18,7 @@ const Person = (props) => {
         </div>
       </Card.Body>
     </Card>
-  );
-};
+  )
+}
 
-export default Person;
+export default Person
