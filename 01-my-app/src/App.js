@@ -1,5 +1,6 @@
 import React from "react"
 import Birthday from "./components/birthday/Birthday"
+import Clock3 from "./components/clock3/Clock3"
 import Counter from "./components/counter/Counter"
 import Odev from "./components/odev/Odev"
 // import BSClassic from "./components/bootstrap-classic/BSClassic";
@@ -95,8 +96,10 @@ function App() {
       <Counter />
       
  <Odev />
- */}
+ 
       <Birthday />
+      */}
+      <Clock3 />
     </div>
   )
 }
