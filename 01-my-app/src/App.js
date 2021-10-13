@@ -19,6 +19,7 @@ import State from "./components/state/State"
 // import InlineStyle from "./components/style/InlineStyle";
 // import InternalStyle from "./components/style/InternalStyle";
 import Test from "./components/test/Test"
+import ChangeTitle from "./components/useEffect/ChangeTitle"
 
 function App() {
   const avatarUrl =
@@ -98,8 +99,12 @@ function App() {
  <Odev />
  
       <Birthday />
-      */}
+      
       <Clock3 />
+
+      */}
+
+      <ChangeTitle />
     </div>
   )
 }
