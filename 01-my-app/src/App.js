@@ -20,6 +20,7 @@ import State from "./components/state/State"
 // import InternalStyle from "./components/style/InternalStyle";
 import Test from "./components/test/Test"
 import ChangeTitle from "./components/useEffect/ChangeTitle"
+import UserCards from "./components/userCards/UserCards"
 
 function App() {
   const avatarUrl =
@@ -102,9 +103,10 @@ function App() {
       
       <Clock3 />
 
-      */}
-
+     
       <ChangeTitle />
+       */}
+      <UserCards />
     </div>
   )
 }
