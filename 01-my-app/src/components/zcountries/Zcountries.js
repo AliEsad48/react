@@ -5,6 +5,24 @@ import axios from "axios"
 const Zcountries = () => {
   const [countries, setCountries] = useState([])
   const [loading, setLoading] = useState(false)
+  const [sortType, setSortType] = useState(false)
+
+  const sirala = () => {
+    countries.sort((a, b) => {
+      var valueA = a.name
+      var valueB = b.name
+      var result = 0
+
+      if (valueA < valueB) {
+        result = 1
+      } else if (valueA > valueB) {
+        result = -1
+      }
+      return result
+    })
+
+    setCountries([...countries])
+  }
 
   useEffect(() => {
     setLoading(true)
@@ -24,7 +42,9 @@ const Zcountries = () => {
           <tr>
             <th>#</th>
             <th>Bayrak</th>
-            <th>Ülke</th>
+            <th>
+              <span onClick={sirala}>Ülke</span>
+            </th>
             <th>Başkent</th>
             <th>Nüfus</th>
             <th>Yüzölçümü</th>
