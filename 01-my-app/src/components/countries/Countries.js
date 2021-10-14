@@ -7,6 +7,7 @@ import Isim from "./Isim"
 import Millet from "./Millet"
 import Nufus from "./Nufus"
 import Rakam from "./Rakam"
+import Yuz from "./Yuz"
 
 const Countries = () => {
   const [country, setCountry] = useState([])
@@ -40,6 +41,7 @@ const Countries = () => {
               <td>Millet</td>
               <td>Nufus</td>
               <td>Başkent</td>
+              <td>Yüzölçümü</td>
             </tr>
           </thead>
           <tbody>
@@ -63,6 +65,9 @@ const Countries = () => {
               <td>
                 <Baskent baskent="Slack" />
               </td>
+              <td>
+                <Yuz yuz="510.100.000" />
+              </td>
             </tr>
             {country.map((country, Index = 2) => {
               return (
@@ -85,6 +90,9 @@ const Countries = () => {
                   </td>
                   <td>
                     <Baskent baskent={country.capital} />
+                  </td>
+                  <td>
+                    <Yuz yuz={country.area} />
                   </td>
                 </tr>
               )

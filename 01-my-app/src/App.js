@@ -24,6 +24,7 @@ import State from "./components/state/State"
 import Test from "./components/test/Test"
 import ChangeTitle from "./components/useEffect/ChangeTitle"
 import UserCards from "./components/userCards/UserCards"
+import Zcountries from "./components/zcountries/"
 
 function App() {
   const avatarUrl =
@@ -110,8 +111,10 @@ function App() {
       <ChangeTitle />
        
       <UserCards />
-      */}
+
       <Countries />
+            */}
+      <Zcountries />
     </div>
   )
 }
