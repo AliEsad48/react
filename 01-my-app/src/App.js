@@ -1,7 +1,10 @@
 import React from "react"
+
 import Birthday from "./components/birthday/Birthday"
 import Clock3 from "./components/clock3/Clock3"
 import Counter from "./components/counter/Counter"
+import Countries from "./components/countries/Countries"
+
 import Odev from "./components/odev/Odev"
 // import BSClassic from "./components/bootstrap-classic/BSClassic";
 // import BSReact from "./components/bootstrap-react/BSReact";
@@ -105,8 +108,10 @@ function App() {
 
      
       <ChangeTitle />
-       */}
+       
       <UserCards />
+      */}
+      <Countries />
     </div>
   )
 }
