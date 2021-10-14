@@ -24,7 +24,7 @@ import State from "./components/state/State"
 import Test from "./components/test/Test"
 import ChangeTitle from "./components/useEffect/ChangeTitle"
 import UserCards from "./components/userCards/UserCards"
-import Zcountries from "./components/zcountries/"
+import Zcountries from "./components/zcountries/Zcountries"
 
 function App() {
   const avatarUrl =
