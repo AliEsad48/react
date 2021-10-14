@@ -43,7 +43,28 @@ const Countries = () => {
             </tr>
           </thead>
           <tbody>
-            {country.map((country, Index) => {
+            <tr>
+              <td>
+                <Rakam index="0" />
+              </td>
+
+              <td>
+                <Bayrak image="https://media-exp1.licdn.com/dms/image/C4E0BAQGCwyvTklc8Xg/company-logo_200_200/0/1622002265209?e=1642032000&v=beta&t=e9WL5TXHUhEQOm3EOfzA1Ra2vKKeEf-FCJFHls4jEkU" />
+              </td>
+              <td>
+                <Isim isim="Techproed Krallığı" />
+              </td>
+              <td>
+                <Millet millet="Dev or Qa" />
+              </td>
+              <td>
+                <Nufus nufus="260" />
+              </td>
+              <td>
+                <Baskent baskent="Slack" />
+              </td>
+            </tr>
+            {country.map((country, Index = 2) => {
               return (
                 <tr>
                   <td>
