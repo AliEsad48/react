@@ -7,10 +7,12 @@ const Zcountries = () => {
   const [loading, setLoading] = useState(false)
   const [sortType, setSortType] = useState(false)
 
-  const sirala = () => {
+  const sirala = (key) => {
     countries.sort((a, b) => {
-      var valueA = a.name
-      var valueB = b.name
+      var valueA = a[key]
+      var valueB = b[key]
+
+      //console.log(valueA, valueB);
       var result = 0
 
       if (valueA < valueB) {
@@ -18,9 +20,14 @@ const Zcountries = () => {
       } else if (valueA > valueB) {
         result = -1
       }
+
+      if (sortType) result *= -1
+      setSortType(!sortType)
+
       return result
     })
 
+    // [...countries] bu işleme shallow copy denir
     setCountries([...countries])
   }
 
@@ -30,30 +37,40 @@ const Zcountries = () => {
       .then((resp) => {
         setCountries(resp.data)
         console.log(resp.data)
+        setLoading(false)
       })
-      .catch((err) => console.log(err))
+      .catch((err) => {
+        console.log(err)
+        setLoading(false)
+      })
   }, [])
 
   return (
     <Container className="mt-5">
-      <h1 style={{ textAlign: "center" }}>Ülkeler</h1>
+      <h1 className="text-center">Ülkeler</h1>
       <Table striped bordered hover>
         <thead>
           <tr>
             <th>#</th>
             <th>Bayrak</th>
             <th>
-              <span onClick={sirala}>Ülke</span>
+              <span onClick={() => sirala("name")}>Ülke</span>
             </th>
-            <th>Başkent</th>
-            <th>Nüfus</th>
-            <th>Yüzölçümü</th>
+            <th>
+              <span onClick={() => sirala("capital")}>Başkent</span>
+            </th>
+            <th>
+              <span onClick={() => sirala("population")}>Nüfus</span>
+            </th>
+            <th>
+              <span onClick={() => sirala("area")}>Yüzölçümü</span>
+            </th>
           </tr>
         </thead>
         <tbody>
           {countries.map((country, index) => (
             <tr key={index}>
-              <td>{index}</td>
+              <td>{index + 1}</td>
               <td>
                 <Image src={country.flag} fluid width="100" />
               </td>

@@ -6,6 +6,7 @@ import Counter from "./components/counter/Counter"
 import Countries from "./components/countries/Countries"
 
 import Odev from "./components/odev/Odev"
+import Posts from "./components/posts/Posts"
 // import BSClassic from "./components/bootstrap-classic/BSClassic";
 // import BSReact from "./components/bootstrap-react/BSReact";
 // import Clock1 from "./components/clock1/Clock1";
@@ -113,8 +114,10 @@ function App() {
       <UserCards />
 
       <Countries />
-            */}
+           
       <Zcountries />
+       */}
+      <Posts />
     </div>
   )
 }
