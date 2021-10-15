@@ -116,8 +116,10 @@ function App() {
       <Countries />
            
       <Zcountries />
-       */}
+      
       <Posts />
+       */}
+      <Clock3 />
     </div>
   )
 }
