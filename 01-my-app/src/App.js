@@ -4,6 +4,8 @@ import Birthday from "./components/birthday/Birthday"
 import Clock3 from "./components/clock3/Clock3"
 import Counter from "./components/counter/Counter"
 import Countries from "./components/countries/Countries"
+import Form1 from "./components/forms/Form1"
+import Form2 from "./components/forms/Form2"
 
 import Odev from "./components/odev/Odev"
 import Posts from "./components/posts/Posts"
@@ -119,8 +121,13 @@ function App() {
       <Zcountries />
       
       <Posts />
-      */}
+      
       <RandomImages />
+      
+      <Form1 />
+      */}
+
+      <Form2 />
     </div>
   )
 }
