@@ -38,30 +38,19 @@ function App() {
   return (
     <div>
       {/*
-       
-     Merhaba Dünya (App)
+      Merhaba Dünya (App)
       <Hello />
       <Test />
       <Jsx />
       <InlineStyle />
       <InternalStyle />
       <ExternalStyle />
- 
       <Clock1 />
-
-      
-
       <Props ad="Ziya" soyad="Sarı" />
       <Props ad="Ali" soyad="Kara" />
       <Props ad="Ayşe" soyad="Pembe" />
       <Props ad="Hakan" soyad="Mavi" />
-
-       
-
       <Clock2 yaziRengi="#FFFFFF" zeminRengi="#000000" />
-     
-
-
       <div style={{ display: "flex", justifyContent: "space-evenly" }}>
         <Profile
           avatar={avatarUrl}
@@ -90,46 +79,24 @@ function App() {
           following="4545"
         />
       </div>
-
-     
-
       <Image />
-       
-       <BSClassic />
-    
-    <BSReact />
-   
-    <Shop />
-     
-     <State />
-    
-
+      <BSClassic />
+      <BSReact />
+      <Shop />
+      <State />
       <Counter />
-      
- <Odev />
- 
+      <Odev />
       <Birthday />
-      
       <Clock3 />
-
-     
       <ChangeTitle />
-       
       <UserCards />
-
       <Countries />
-           
       <Zcountries />
-      
       <Posts />
-      
       <RandomImages />
-      
       <Form1 />
-     
-
-      <Form2 />
-       */}
+      <Form2 /> 
+      */}
       <Form3 />
     </div>
   )
