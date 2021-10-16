@@ -7,6 +7,7 @@ import Countries from "./components/countries/Countries"
 import Form1 from "./components/forms/Form1"
 import Form2 from "./components/forms/Form2"
 import Form3 from "./components/forms/Form3"
+import Form4 from "./components/forms/Form4"
 
 import Odev from "./components/odev/Odev"
 import Posts from "./components/posts/Posts"
@@ -96,8 +97,10 @@ function App() {
       <RandomImages />
       <Form1 />
       <Form2 /> 
-      */}
+      
       <Form3 />
+      */}
+      <Form4 />
     </div>
   )
 }
