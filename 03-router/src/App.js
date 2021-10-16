@@ -1,12 +1,10 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-
 import Footer from "./components/shared/Footer"
 import Header from "./components/shared/Header"
 import Menu from "./components/shared/Menu"
 import AboutPage from "./pages/AboutPage"
 import ContactPage from "./pages/ContactPage"
 import HomePage from "./pages/HomePage"
-
 function App() {
   return (
     <Router>
@@ -16,10 +14,10 @@ function App() {
         <Route path="/">
           <HomePage />
         </Route>
-        <Route path="/about">
+        <Route path="/hakkimizda">
           <AboutPage />
         </Route>
-        <Route path="/contact">
+        <Route path="/iletisim">
           <ContactPage />
         </Route>
       </Switch>
@@ -27,5 +25,4 @@ function App() {
     </Router>
   )
 }
-
 export default App
