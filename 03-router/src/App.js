@@ -22,6 +22,7 @@ function App() {
         </Route>
       </Switch>
       <Footer />
+      <ContactPage />
     </Router>
   )
 }

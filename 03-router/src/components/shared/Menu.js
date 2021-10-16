@@ -1,7 +1,13 @@
-import React from "react";
+import React from "react"
+import { Link } from "react-router-dom"
 
 const Menu = () => {
-  return <div>Ana Sayfa | Hakkımızda | İletişim</div>;
-};
+  return (
+    <div>
+      <Link to="/">Ana Sayfa</Link> | <Link to="/hakkimizda">Hakkımızda</Link> |
+      <Link to="/iletisim">İletişim</Link> |
+    </div>
+  )
+}
 
-export default Menu;
+export default Menu
