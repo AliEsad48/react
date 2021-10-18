@@ -13,9 +13,15 @@ const Menu = () => {
       <ListGroup.Item>
         <Link to="/bs-classic">Bootstrap Classic</Link>
       </ListGroup.Item>
-      <ListGroup.Item>Bootstrap React</ListGroup.Item>
-      <ListGroup.Item>Clock1</ListGroup.Item>
-      <ListGroup.Item>Clock2</ListGroup.Item>
+      <ListGroup.Item>
+        <Link to="/bs-react">Bootstrap React</Link>
+      </ListGroup.Item>
+      <ListGroup.Item>
+        <Link to="/clock-1">Clock1</Link>
+      </ListGroup.Item>
+      <ListGroup.Item>
+        <Link to="/clock-2">Clock2</Link>
+      </ListGroup.Item>
     </ListGroup>
   )
 }
