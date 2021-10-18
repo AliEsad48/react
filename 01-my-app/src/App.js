@@ -9,6 +9,21 @@ import Header from "./components/shared/Header"
 import BootstrapReactPage from "./pages/BootstrapReactPage"
 import Clock1Page from "./pages/Clock1Page"
 import Clock2Page from "./pages/Clock2Page"
+import Countries from "./components/countries/Countries"
+import ChangeTitle from "./components/useEffect/ChangeTitle"
+import UserCards from "./components/userCards/UserCards"
+import RandomImages from "./components/randomImages/RandomImages"
+import Props from "./components/props/Props"
+import Profile from "./components/profile/Profile"
+import Jsx from "./components/jsx/Jsx"
+import Counter from "./components/counter/Counter"
+import Hello from "./components/hello/Hello"
+import Comp from "./components/comp/Comp"
+import Form1 from "./components/forms/Form1"
+import Form2 from "./components/forms/Form2"
+import Form3 from "./components/forms/Form3"
+import Form4 from "./components/forms/Form4"
+import Shop from "./components/shop/Shop"
 function App() {
   return (
     <Router>
@@ -20,6 +35,51 @@ function App() {
           </Col>
           <Col md={8}>
             <Switch>
+              <Route path="/shop">
+                <Shop />
+              </Route>
+              <Route path="/form4">
+                <Form4 />
+              </Route>
+              <Route path="/form3">
+                <Form3 />
+              </Route>
+              <Route path="/form2">
+                <Form2 />
+              </Route>
+              <Route path="/form1">
+                <Form1 />
+              </Route>
+              <Route path="/comp">
+                <Comp />
+              </Route>
+              <Route path="/hello">
+                <Hello />
+              </Route>
+              <Route path="/counter">
+                <Counter />
+              </Route>
+              <Route path="/jsx">
+                <Jsx />
+              </Route>
+              <Route path="/profile">
+                <Profile />
+              </Route>
+              <Route path="/props">
+                <Props />
+              </Route>
+              <Route path="/rimages">
+                <RandomImages />
+              </Route>
+              <Route path="/ucards">
+                <UserCards />
+              </Route>
+              <Route path="/ctitle">
+                <ChangeTitle />
+              </Route>
+              <Route path="/countries">
+                <Countries />
+              </Route>
               <Route path="/clock-2">
                 <Clock2Page />
               </Route>
