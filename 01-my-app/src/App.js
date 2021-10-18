@@ -24,6 +24,11 @@ import Form2 from "./components/forms/Form2"
 import Form3 from "./components/forms/Form3"
 import Form4 from "./components/forms/Form4"
 import Shop from "./components/shop/Shop"
+import ToDoApp from "./components/todoapp/ToDoApp"
+import Clock3 from "./components/clock3/Clock3"
+import Posts from "./components/posts/Posts"
+import Odev from "./components/odev/Odev"
+import State from "./components/state/State"
 function App() {
   return (
     <Router>
@@ -35,6 +40,18 @@ function App() {
           </Col>
           <Col md={8}>
             <Switch>
+              <Route path="/state">
+                <State />
+              </Route>
+              <Route path="/progress">
+                <Odev />
+              </Route>
+              <Route path="/posts">
+                <Posts />
+              </Route>
+              <Route path="/todoapp">
+                <ToDoApp />
+              </Route>
               <Route path="/shop">
                 <Shop />
               </Route>
@@ -68,22 +85,25 @@ function App() {
               <Route path="/props">
                 <Props />
               </Route>
-              <Route path="/rimages">
+              <Route path="/random-images">
                 <RandomImages />
               </Route>
-              <Route path="/ucards">
+              <Route path="/usercards">
                 <UserCards />
               </Route>
-              <Route path="/ctitle">
+              <Route path="/useeffect">
                 <ChangeTitle />
               </Route>
               <Route path="/countries">
                 <Countries />
               </Route>
-              <Route path="/clock-2">
+              <Route path="/clock3">
+                <Clock3 />
+              </Route>
+              <Route path="/clock2">
                 <Clock2Page />
               </Route>
-              <Route path="/clock-1">
+              <Route path="/clock1">
                 <Clock1Page />
               </Route>
               <Route path="/bs-react">
