@@ -12,26 +12,33 @@ const LoginPage = () => {
   const [loading, setLoading] = useState(false)
   const context = useContext(StoreContext)
   const { setUser } = context
+
+  const history = useHistory()
+
   const API_URL = "https://banking-api-back-end.herokuapp.com/api/"
+
   const handleChange = (e) => {
     const { name, value } = e.target
     setFormData({ ...formData, [name]: value })
   }
+
   const handleSubmit = (e) => {
     e.preventDefault()
     setLoading(true)
     axios.post(`${API_URL}users/login`, formData).then((resp) => {
       const token = resp.data.id_token
       const authHeader = { Authorization: "Bearer " + token }
+
       axios(`${API_URL}users/auth`, { headers: authHeader }).then(
         (respUser) => {
-          console.log(respUser.data)
           setUser(respUser.data)
           setLoading(false)
+          history.push("/")
         }
       )
     })
   }
+
   return (
     <Container className="mt-5">
       <Row className="justify-content-center">
@@ -47,6 +54,7 @@ const LoginPage = () => {
                 onChange={handleChange}
               />
             </Form.Group>
+
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
               <Form.Control
@@ -57,6 +65,7 @@ const LoginPage = () => {
                 onChange={handleChange}
               />
             </Form.Group>
+
             <Button variant="primary" type="submit" disabled={loading}>
               {loading && (
                 <Spinner animation="border" variant="light" size="sm" />
@@ -69,4 +78,5 @@ const LoginPage = () => {
     </Container>
   )
 }
+
 export default LoginPage

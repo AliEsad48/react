@@ -7,6 +7,10 @@ import LoginPage from "./pages/LoginPage"
 const App = () => {
   const [user, setUser] = useState({})
 
+  const isUserLogin = () => {
+    return Object.keys
+  }
+
   return (
     <StoreContext.Provider value={{ user, setUser }}>
       <BrowserRouter>
