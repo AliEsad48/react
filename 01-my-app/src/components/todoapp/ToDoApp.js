@@ -1,14 +1,18 @@
-import React, { useState } from "react"
-import { Col, Container, Row } from "react-bootstrap"
-import NoteForm from "./NoteForm"
-import Notes from "./Notes"
+import React, { useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import NoteForm from "./NoteForm";
+import Notes from "./Notes";
 
 const ToDoApp = () => {
-  const [notes, setNotes] = useState([])
+  const [notes, setNotes] = useState([]);
+
   const ekle = (note) => {
-    setNotes([note, ...notes])
-  }
-  const sil = (id) => {}
+    setNotes([note, ...notes]);
+  };
+  const sil = (id) => {
+    const yeniDizi = notes.filter((note) => note.id != id);
+    setNotes(yeniDizi);
+  };
 
   return (
     <Container>
@@ -21,7 +25,7 @@ const ToDoApp = () => {
         </Col>
       </Row>
     </Container>
-  )
-}
+  );
+};
 
-export default ToDoApp
+export default ToDoApp;

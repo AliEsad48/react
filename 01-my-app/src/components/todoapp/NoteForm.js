@@ -1,18 +1,23 @@
-import React, { useState } from "react"
-import { Button, Form } from "react-bootstrap"
+import React, { useState } from "react";
+import { Form, Button } from "react-bootstrap";
+
 const NoteForm = (props) => {
-  const [note, setNote] = useState("")
-  const handleClick = () => {
+  const [note, setNote] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
     const yeniNote = {
       id: Date.now(),
       note: note,
-    }
-    props.ekle(yeniNote)
-  }
+    };
+
+    props.ekle(yeniNote);
+    setNote("");
+  };
 
   return (
     <div style={{ backgroundColor: "#efefef", padding: "1rem" }}>
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Notunuzu giriniz</Form.Label>
           <Form.Control
@@ -21,11 +26,13 @@ const NoteForm = (props) => {
             onChange={(e) => setNote(e.target.value)}
           />
         </Form.Group>
-        <Button variant="warning" onClick={handleClick}>
+
+        <Button variant="warning" type="submit">
           Ekle
         </Button>
       </Form>
     </div>
-  )
-}
-export default NoteForm
+  );
+};
+
+export default NoteForm;
