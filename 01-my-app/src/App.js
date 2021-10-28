@@ -32,6 +32,7 @@ import State from "./components/state/State"
 import { StoreContext } from "./components/store"
 import axios from "axios"
 import Exchange from "./components/exchange/Exchange"
+import RenkDegistir from "./components/renkDegistir/RenkDegistir"
 function App() {
   const [kurlar, setKurlar] = useState({})
   useEffect(() => {
@@ -51,6 +52,9 @@ function App() {
             </Col>
             <Col md={8}>
               <Switch>
+                <Route path="/rdegistir">
+                  <RenkDegistir />
+                </Route>
                 <Route path="/exchange">
                   <Exchange />
                 </Route>
